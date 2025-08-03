@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Halaman Login -->
+  <div id="loginPage" class="login-container">
+    <h2>Nomor Whatsapp</h2>
+    <input type="tel" id="userPhone" placeholder="harus di mulai dari 08..." required />
+    <button id="masukBtn">Masuk</button>
+  </div>
+
+  <!-- Halaman Form Pengeluaran -->
+  <div class="container" id="mainForm" style="display: none;">
+    <form id="pengeluaran-form">
+      <div class="input-group">
+        <label for="hari">Hari</label>
+        <input type="text" id="hari" name="hari" required />
+      </div>
+
+      <div class="input-row">
+        <div class="input-group">
+          <label for="tanggal">Tanggal</label>
+          <input type="number" id="tanggal" name="tanggal" required />
+        </div>
+        <div class="input-group">
+          <label for="bulan">Bulan</label>
+          <input type="text" id="bulan" name="bulan" required />
+        </div>
+        <div class="input-group">
+          <label for="tahun">Tahun</label>
+          <input type="number" id="tahun" name="tahun" required />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="rupiah">Rp</label>
+        <input type="text" id="rupiah" name="rupiah" required />
+      </div>
+
+      <div class="input-group">
+        <label for="keterangan">Keterangan</label>
+        <textarea id="keterangan" name="keterangan" rows="4" required></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="button" id="resetBtn">Reset 🔄</button>
+        <button type="submit" id="lanjutBtn">Lanjut →</button>
+      </div>
+    </form>
+  </div>
+
+<div id="gantiNomorWrapper" style="text-align: center; margin-top: 20px; display: none;">
+  <button type="button" id="gantiNomorBtn" style="
+    background-color: #ffebeb;
+    color: #b30000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  ">
+    🔁 Ganti Nomor WhatsApp
+  </button>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

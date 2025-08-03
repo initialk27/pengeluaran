@@ -1,0 +1,163 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body full-screen dan tengah */
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+/* ============================= */
+/* Login Container */
+.login-container {
+  background-color: white;
+  padding: 20px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.login-container h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #333;
+}
+
+.login-container input {
+  background-color: rgba(221, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #00fff7;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #b4ffff;
+  color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(3, 245, 247, 0.3);
+}
+
+.login-container button:hover {
+  background-color: #03F5F7;
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(3, 245, 247, 0.5);
+}
+
+/* ============================= */
+/* Kontainer form pengeluaran */
+.container {
+  background-color: white;
+  padding: 20px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input group umum */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  background-color: rgba(221, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #00fff7;
+}
+
+/* Baris untuk Tanggal-Bulan-Tahun */
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Tombol */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 17px 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(3, 245, 247, 0.3);
+  background-color: #b4ffff;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-group button:hover {
+  background-color: #03F5F7;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(3, 245, 247, 0.5);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .container,
+  .login-container {
+    padding: 18px 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
